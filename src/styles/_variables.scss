@@ -1,0 +1,29 @@
+// Base Neutrals
+$color-dark: #062630;
+$color-medium: #385159;
+$color-light: #e6e1df;
+$color-soft: #faf5f3;
+$color-white: #ffffff;
+
+// Accent Colors
+$color-accent: #fea36f;
+$color-accent-light: #ffe2d1;
+$color-accent-soft: #fff5ef;
+
+// Gradients
+$gradient-text: linear-gradient(
+  107deg,
+  $color-accent -11.37%,
+  $color-dark 61.84%
+);
+
+$gradient-background: linear-gradient(
+  90deg,
+  $color-accent-light 0%,
+  $color-accent-soft 100%
+);
+
+// Fonts
+
+$martian-mono: 'Martian Mono', monospace;
+$inter: 'Inter', sans-serif;
