@@ -32,6 +32,7 @@ export default function Hero() {
                     type="button"
                   >
                     <img
+                      className="bouncy__image"
                       src="./src/assets/images/icon-arrow-down.svg"
                       alt="arrow down for button"
                     />
