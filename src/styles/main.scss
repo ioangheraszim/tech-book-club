@@ -1,1 +1,56 @@
 @import './reset';
+@import './variables';
+@import './mixins';
+
+// Global styles
+
+.container {
+  width: min(calc(100% - 2rem), 365px);
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    width: min(calc(100% - 2rem), 765px);
+    flex-direction: row;
+  }
+
+  @media (min-width: 1080px) {
+    width: min(calc(100% - 2rem), 1440px);
+    flex-direction: row;
+  }
+}
+
+.btn {
+  border: none;
+  outline: none;
+  background-color: $color-soft;
+  border: 2px solid $color-dark;
+  margin: 1rem auto;
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.btn:hover {
+  background-color: transparent;
+  background-image: $gradient-background;
+}
+
+.btn--flex {
+  display: flex;
+  align-items: center;
+
+  img {
+    animation: bounceArrow 1s infinite ease-in-out;
+  }
+
+  @keyframes bounceArrow {
+    0%,
+    100% {
+      transform: translateX(1rem) translateY(0);
+    }
+    50% {
+      transform: translateX(1rem) translateY(-5px);
+    }
+  }
+}

@@ -1,0 +1,59 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.hero {
+  background-image: url('../../assets/images/pattern-light-bg.svg');
+}
+
+nav {
+  padding: 2rem 0;
+}
+
+.hero__section {
+  @include flex-center;
+  flex-direction: column;
+  gap: 3rem;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+
+  @media (min-width: 1080px) {
+    flex-direction: row;
+  }
+}
+
+.hero__title {
+  font-size: 2.25rem;
+  line-height: 2.75rem;
+  background: $gradient-text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero__subtext {
+  font-size: 1.2rem;
+  padding: 2rem 0;
+}
+
+.cta__testimonial {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem 0;
+
+  .cta__image {
+    width: 30%;
+  }
+}
+
+.stars {
+  display: flex;
+}
+
+.hero__image {
+  margin: 1rem 0;
+  img {
+    border-radius: 0.5rem;
+  }
+}
