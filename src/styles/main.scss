@@ -5,16 +5,16 @@
 // Global styles
 
 .container {
-  width: min(calc(100% - 2rem), 365px);
+  width: min(calc(100% - 1rem), 365px);
   margin: 0 auto;
 
   @media (min-width: 768px) {
-    width: min(calc(100% - 2rem), 765px);
+    width: min(calc(100% - 1rem), 765px);
     padding: 0 2rem;
   }
 
   @media (min-width: 1080px) {
-    width: min(calc(100% - 2rem), 1440px);
+    width: min(calc(100% - 1rem), 1440px);
   }
 }
 
@@ -55,5 +55,15 @@
     50% {
       transform: translateX(0.5rem) translateY(-5px);
     }
+  }
+}
+
+.title {
+  font-size: 2rem;
+  line-height: normal;
+  padding: 2rem 0;
+
+  @media (min-width: 768px) {
+    font-size: 3rem;
   }
 }

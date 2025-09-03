@@ -4,7 +4,7 @@ export default function Features() {
   return (
     <section className="features">
       <div className="container">
-        <div>
+        <div className="features__container">
           <div className="features__content">
             <div className="features__image">
               <img
@@ -14,13 +14,13 @@ export default function Features() {
             </div>
             <div className="features__text">
               <h2 className="title">Read toghether, grow toghether</h2>
-              <ul>
+              <ul className="features__list">
                 <li>
                   Monthly curated techs reads selected by industrial experts
                 </li>
                 <li>Virtual and in-person meetups for deep-dive discussions</li>
                 <li>Early access to new tech book releases</li>
-                <li>Autho Q&A sessions with tech thought leaders</li>
+                <li>Author Q&A sessions with tech thought leaders</li>
               </ul>
             </div>
           </div>
@@ -33,10 +33,12 @@ export default function Features() {
                 <h2 className="title">Not your average book club</h2>
                 <div className="cirlce-image"></div>
               </div>
-              <p>
-                Connect with a community that speaks your language - from Python
-                to TypeScript and everything in between. Our discussions blend
-                technical depth with practical applications.
+              <p className="discussion__text">
+                Connect with a community that speaks your language - from
+                <span className="boldness"> Python</span> to
+                <span className="boldness"> TypeScript</span> and everything in
+                between. Our discussions blend technical depth with practical
+                applications.
               </p>
             </div>
           </div>

@@ -1,0 +1,43 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.features {
+  margin: 2rem 0;
+  height: 100vh;
+}
+
+.features__content,
+.features__discussion {
+  @include flex-center;
+  flex-direction: column-reverse;
+}
+
+.features__list {
+  list-style: none;
+
+  li {
+    color: $color-medium;
+    font-family: $inter;
+    font-size: 1.25rem;
+    margin: 1.5rem 0;
+    padding-left: 2rem;
+    background: url('../../assets/images/icon-check.svg') no-repeat left center;
+    background-size: 1.5rem;
+  }
+}
+
+.features__image {
+  margin: 1.5rem 0;
+  img {
+    border-radius: 1.5rem;
+  }
+}
+
+.boldness {
+  font-weight: 600;
+}
+
+.discussion__text {
+  color: $color-medium;
+  font-size: 1.25rem;
+}

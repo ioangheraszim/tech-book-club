@@ -90,7 +90,7 @@ nav {
 
   .cta__data {
     text-align: start;
-    font-family: 'Martian Mono', monospace;
+    font-family: $martian-mono;
     font-size: 0.65rem;
 
     @media (min-width: 768px) {
