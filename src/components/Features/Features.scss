@@ -12,6 +12,22 @@
   flex-direction: column-reverse;
 }
 
+@media (min-width: 1080px) {
+  .features__content {
+    flex-direction: row;
+    gap: 3rem;
+  }
+
+  .features__text {
+    width: 50%;
+  }
+
+  .features__discussion {
+    flex-direction: row-reverse;
+    gap: 3rem;
+  }
+}
+
 .features__list {
   list-style: none;
 
