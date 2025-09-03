@@ -2,7 +2,20 @@
 @import '../../styles/mixins';
 
 .hero {
-  background-image: url('../../assets/images/pattern-light-bg.svg');
+  background: url('../../assets/images/pattern-light-bg.svg') $color-soft;
+  @media (min-width: 768px) {
+    background:
+      right 100% bottom -75% no-repeat
+        url('../../assets/images/pattern-glow.svg'),
+      url('../../assets/images/pattern-light-bg.svg') $color-soft;
+  }
+
+  @media (min-width: 1080px) {
+    background:
+      right -40% bottom 150% no-repeat
+        url('../../assets/images/pattern-glow.svg'),
+      url('../../assets/images/pattern-light-bg.svg') $color-soft;
+  }
 }
 
 nav {
@@ -12,14 +25,30 @@ nav {
 .hero__section {
   @include flex-center;
   flex-direction: column;
-  gap: 3rem;
-
+  gap: 2rem;
   @media (min-width: 768px) {
-    flex-direction: row;
+    flex-direction: column;
   }
 
   @media (min-width: 1080px) {
     flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.hero__content {
+  @media (min-width: 1080px) {
+    width: 50%;
+  }
+}
+
+.hero__image {
+  @media (min-width: 1080px) {
+    width: 45%;
+  }
+  margin: 1rem 0;
+  img {
+    border-radius: 0.5rem;
   }
 }
 
@@ -29,6 +58,11 @@ nav {
   background: $gradient-text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  @media (min-width: 768px) {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
 }
 
 .hero__subtext {
@@ -37,23 +71,34 @@ nav {
 }
 
 .cta__testimonial {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding: 1rem 0;
+  @include flex-center;
+  justify-content: space-between;
+  margin: 2rem 0 0 0;
+
+  @media (min-width: 768px) {
+    justify-content: start;
+  }
 
   .cta__image {
     width: 30%;
+
+    @media (min-width: 768px) {
+      width: 25%;
+      margin-right: 2rem;
+    }
   }
-}
 
-.stars {
-  display: flex;
-}
+  .cta__data {
+    text-align: start;
+    font-family: 'Martian Mono', monospace;
+    font-size: 0.65rem;
 
-.hero__image {
-  margin: 1rem 0;
-  img {
-    border-radius: 0.5rem;
+    @media (min-width: 768px) {
+      font-size: 1rem;
+    }
+  }
+
+  .stars {
+    display: flex;
   }
 }

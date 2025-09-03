@@ -40,16 +40,31 @@ export default function Hero() {
                     <img
                       className="cta__image"
                       src="./src/assets/images/image-avatars.webp"
-                      alt=""
+                      alt="images of people who wrote testimonials"
                     />
                     <div className="cta__rating">
-                      <span className="stars">
-                        <img src="./src/assets/images/icon-star.svg" alt="" />
-                        <img src="./src/assets/images/icon-star.svg" alt="" />
-                        <img src="./src/assets/images/icon-star.svg" alt="" />
-                        <img src="./src/assets/images/icon-star.svg" alt="" />
-                        <img src="./src/assets/images/icon-star.svg" alt="" />
-                      </span>
+                      <div className="stars">
+                        <img
+                          src="./src/assets/images/icon-star.svg"
+                          alt="star"
+                        />
+                        <img
+                          src="./src/assets/images/icon-star.svg"
+                          alt="star"
+                        />
+                        <img
+                          src="./src/assets/images/icon-star.svg"
+                          alt="star"
+                        />
+                        <img
+                          src="./src/assets/images/icon-star.svg"
+                          alt="star"
+                        />
+                        <img
+                          src="./src/assets/images/icon-star.svg"
+                          alt="star"
+                        />
+                      </div>
                       <p className="cta__data">
                         200+ developers joined already
                       </p>

@@ -10,25 +10,28 @@
 
   @media (min-width: 768px) {
     width: min(calc(100% - 2rem), 765px);
-    flex-direction: row;
+    padding: 0 2rem;
   }
 
   @media (min-width: 1080px) {
     width: min(calc(100% - 2rem), 1440px);
-    flex-direction: row;
   }
 }
 
 .btn {
   border: none;
   outline: none;
-  background-color: $color-soft;
-  border: 2px solid $color-dark;
-  margin: 1rem auto;
-  padding: 1.25rem;
+  background-color: $color-accent-soft;
+  outline: 2px solid $color-dark;
+  padding: 1.25rem 0.75rem;
   border-radius: 0.5rem;
   cursor: pointer;
-  font-size: 0.85rem;
+  font-weight: 600;
+  width: 100%;
+
+  @media (min-width: 765px) {
+    width: auto;
+  }
 }
 
 .btn:hover {
@@ -47,10 +50,10 @@
   @keyframes bounceArrow {
     0%,
     100% {
-      transform: translateX(1rem) translateY(0);
+      transform: translateX(0.5rem) translateY(0);
     }
     50% {
-      transform: translateX(1rem) translateY(-5px);
+      transform: translateX(0.5rem) translateY(-5px);
     }
   }
 }
