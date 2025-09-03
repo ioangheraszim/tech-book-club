@@ -5,7 +5,7 @@ export default function Journey() {
     <section className="journey">
       <div className="container">
         <div className="journey__container">
-          <h2 className="title">Your tech reading journey</h2>
+          <h2 className="title title--journey">Your tech reading journey</h2>
           <ul className="journey__list">
             <li className="list__item">
               <div className="numbah">1</div>

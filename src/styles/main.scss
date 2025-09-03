@@ -58,6 +58,10 @@
   }
 }
 
+.btn--full {
+  width: 100%;
+}
+
 .title {
   font-size: 2rem;
   line-height: normal;
@@ -66,4 +70,13 @@
   @media (min-width: 768px) {
     font-size: 3.125rem;
   }
+}
+.title--centered {
+  @media (min-width: 765px) {
+    text-align: center;
+  }
+}
+
+.title--journey {
+  padding: 2rem 2.5rem;
 }

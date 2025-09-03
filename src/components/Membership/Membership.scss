@@ -1,0 +1,86 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.membership {
+  margin: 5rem 0;
+}
+
+.membership__options {
+  display: grid;
+  gap: 2rem;
+  margin-top: 2rem;
+  justify-content: center;
+  grid-template-columns: 1fr;
+}
+
+.membership__options {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+
+  @media (min-width: 765px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 1080px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.members__card {
+  border-radius: 1rem;
+  outline: 1px solid $color-dark;
+  padding: 1rem;
+
+  @media (min-width: 1080px) {
+    transform: scale(95%);
+  }
+
+  .card__name {
+    padding: 1rem 0;
+    font-size: 1.5rem;
+  }
+
+  .price__container {
+    padding: 1rem 0;
+
+    p {
+      font-family: $martian-mono;
+      font-size: 2.125rem;
+      font-weight: 700;
+
+      .price__month {
+        font-weight: 400;
+        font-size: 1.25rem;
+      }
+    }
+  }
+}
+
+.members__card:nth-child(2) {
+  background-color: $color-soft;
+  background-image: url(../../assets/images/pattern-glow.svg);
+
+  @media (min-width: 1080px) {
+    transform: scale(110%);
+  }
+}
+
+.price__list {
+  list-style-type: none;
+
+  li {
+    color: $color-medium;
+    font-family: $inter;
+    font-size: 1.25rem;
+    margin: 1.5rem 0;
+    padding-left: 2rem;
+    background: url('../../assets/images/icon-check.svg') no-repeat left center;
+    background-size: 1.5rem;
+  }
+}
+
+.card__divider {
+  margin: 2rem 0;
+}

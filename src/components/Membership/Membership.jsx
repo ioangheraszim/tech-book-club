@@ -4,7 +4,7 @@ export default function Membership() {
   return (
     <section className="membership">
       <div className="container">
-        <h2 className="title">Membership Options</h2>
+        <h2 className="title title--centered">Membership Options</h2>
         <div className="membership__options">
           <div className="members__card">
             <h3 className="card__name">Starter</h3>
@@ -13,11 +13,11 @@ export default function Membership() {
                 $19 <span className="price__month">/month</span>
               </p>
               <hr className="card__divider" />
-              <ul>
+              <ul className="price__list">
                 <li>1 book/month</li>
                 <li>Online forums</li>
               </ul>
-              <Button className="btn" text="SUBSCRIBE NOW"></Button>
+              <Button className="btn btn--full" text="SUBSCRIBE NOW"></Button>
             </div>
           </div>
           <div className="members__card">
@@ -27,11 +27,11 @@ export default function Membership() {
                 $29 <span className="price__month">/month</span>
               </p>
               <hr className="card__divider" />
-              <ul>
+              <ul className="price__list">
                 <li>2 book/month</li>
                 <li>Virtual meetups</li>
               </ul>
-              <Button className="btn" text="SUBSCRIBE NOW"></Button>
+              <Button className="btn btn--full" text="SUBSCRIBE NOW"></Button>
             </div>
           </div>
           <div className="members__card">
@@ -39,11 +39,11 @@ export default function Membership() {
             <div className="price__container">
               <p>Custom</p>
               <hr className="card__divider" />
-              <ul>
+              <ul className="price__list">
                 <li>Team access</li>
                 <li>Private sessions</li>
               </ul>
-              <Button className="btn" text="SUBSCRIBE NOW"></Button>
+              <Button className="btn btn--full" text="TALK TO US"></Button>
             </div>
           </div>
         </div>

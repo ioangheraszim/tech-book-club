@@ -1,2 +1,53 @@
 @import '../../styles/variables';
 @import '../../styles/mixins';
+
+.journey {
+  margin: 5rem;
+}
+
+.journey__container {
+  background:
+    right 75% bottom 120% no-repeat url('../../assets/images/pattern-glow.svg'),
+    url('../../assets/images/pattern-light-bg.svg') $color-soft;
+  @include flex-center;
+  flex-direction: column;
+  border-radius: 1rem;
+  padding: 2rem 0;
+}
+
+.journey__list {
+  list-style-type: none;
+  font-weight: 500;
+  margin-right: auto;
+  margin-left: 2rem;
+  .numbah {
+    @include flex-center;
+    border: 1px solid $color-dark;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    padding: 1rem;
+  }
+
+  p {
+    margin: 1rem 0;
+  }
+}
+
+@media (min-width: 1080px) {
+  .journey__list {
+    @include flex-center;
+    justify-content: space-between;
+
+    .list__item {
+      margin: 2.5rem;
+      background-image: url(../../assets/images/pattern-arrow.svg);
+      background-position: top 0% right 0%;
+      background-repeat: no-repeat;
+    }
+
+    .list__item:nth-child(4) {
+      background-image: none;
+    }
+  }
+}
