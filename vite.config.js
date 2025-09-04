@@ -2,6 +2,7 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
+  base: '/tech-book-club/',
   plugins: [react()],
   build: {
     minify: 'terser', // switch from esbuild to terser for deeper compression
