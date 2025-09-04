@@ -1,5 +1,5 @@
 import './Hero.scss'
-import Button from '../Button/Button'
+import Button from '/src/components/Button/Button.jsx'
 
 export default function Hero() {
   return (

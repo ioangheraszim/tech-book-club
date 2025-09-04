@@ -1,5 +1,6 @@
 import './Membership.scss'
-import Button from '../button/Button'
+import Button from '/src/components/Button/Button.jsx'
+
 export default function Membership() {
   return (
     <section className="membership">
