@@ -17,4 +17,9 @@ export default defineConfig({
     sourcemap: false, // optional: disable sourcemaps for smaller bundle
     chunkSizeWarningLimit: 600, // optional: raise warning threshold if needed
   },
+  test: {
+    environment: 'jsdom',
+    globals: true,
+    setupFiles: './vitest.setup.js', // or .ts if you're using TS
+  },
 })
