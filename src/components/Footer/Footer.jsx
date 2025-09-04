@@ -7,6 +7,7 @@ import linkedin from '../../assets/images/logo-linkedin.svg'
 import bluesky from '../../assets/images/logo-bluesky.svg'
 import avatars from '../../assets/images/image-avatars.webp'
 import stars from '../../assets/images/icon-star.svg'
+import arrowUp from '../../assets/images/icon-arrow-up.svg'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -25,7 +26,7 @@ export default function Footer() {
             >
               <img
                 className="bouncy__image"
-                src="./src/assets/images/icon-arrow-up.svg"
+                src={arrowUp}
                 alt="icon arrow up"
               />
             </Button>
