@@ -1,6 +1,13 @@
 import './Footer.scss'
 import Button from '../ButtonComp/ButtonComp'
 
+// Image imports
+
+import linkedin from '../../assets/images/logo-linkedin.svg'
+import bluesky from '../../assets/images/logo-bluesky.svg'
+import avatars from '../../assets/images/image-avatars.webp'
+import stars from '../../assets/images/icon-star.svg'
+
 export default function Footer() {
   const currentYear = new Date().getFullYear()
 
@@ -26,16 +33,16 @@ export default function Footer() {
           <div className="cta__testimonial">
             <img
               className="cta__image"
-              src="./src/assets/images/image-avatars.webp"
+              src={avatars}
               alt="images of people who wrote testimonials"
             />
             <div className="cta__rating">
               <div className="stars">
-                <img src="./src/assets/images/icon-star.svg" alt="star" />
-                <img src="./src/assets/images/icon-star.svg" alt="star" />
-                <img src="./src/assets/images/icon-star.svg" alt="star" />
-                <img src="./src/assets/images/icon-star.svg" alt="star" />
-                <img src="./src/assets/images/icon-star.svg" alt="star" />
+                <img src={stars} alt="star" />
+                <img src={stars} alt="star" />
+                <img src={stars} alt="star" />
+                <img src={stars} alt="star" />
+                <img src={stars} alt="star" />
               </div>
               <p className="cta__data cta__data--white">
                 200+ developers joined already
@@ -49,13 +56,10 @@ export default function Footer() {
           </div>
           <div className="socials">
             <a href="#">
-              <img
-                src="./src/assets/images/logo-bluesky.svg"
-                alt="blue sky logo"
-              />
+              <img src={bluesky} alt="blue sky logo" />
             </a>
             <a href="#">
-              <img src="./src/assets/images/logo-linkedin.svg" alt="linkedin" />
+              <img src={linkedin} alt="linkedin" />
             </a>
           </div>
         </div>

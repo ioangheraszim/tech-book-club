@@ -1,6 +1,11 @@
 import './Features.scss'
 import useInView from '../../hooks/useInView'
 
+// Image imports
+
+import reading from '../../assets/images/image-read-together.webp'
+import discussing from '../../assets/images/image-not-average.webp'
+
 export default function Features() {
   const [ref, isVisible] = useInView({ threshold: 0.4 })
 
@@ -15,10 +20,7 @@ export default function Features() {
             <div
               className={`features__image features__image--left ${isVisible ? 'animate-slide-left' : ''}`}
             >
-              <img
-                src="./src/assets/images/image-read-together.webp"
-                alt="an image of people reading books"
-              />
+              <img src={reading} alt="an image of people reading books" />
             </div>
             <div
               className={`features__text ${isVisible ? 'animate-fade-up delay-1' : ''}`}
@@ -45,7 +47,7 @@ export default function Features() {
             <div
               className={`features__image features__image--right ${isVisible ? 'animate-slide-right delay-6' : ''}`}
             >
-              <img src="./src/assets/images/image-not-average.webp" alt="" />
+              <img src={discussing} alt="people discussing a book" />
             </div>
             <div
               className={`features__text ${isVisible ? 'animate-fade-up delay-7' : ''}`}

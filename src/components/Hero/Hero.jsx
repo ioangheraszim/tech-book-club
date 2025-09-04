@@ -1,5 +1,14 @@
 import './Hero.scss'
 import Button from '../ButtonComp/ButtonComp'
+
+// Image imports
+
+import heroImg from '../../assets/images/image-hero.webp'
+import logo from '../../assets/images/logo.svg'
+import arrowDown from '../../assets/images/icon-arrow-down.svg'
+import stars from '../../assets/images/icon-star.svg'
+import avatars from '../../assets/images/image-avatars.webp'
+
 export default function Hero() {
   return (
     <>
@@ -10,7 +19,7 @@ export default function Hero() {
               <div>
                 <img
                   className="logo"
-                  src="./src/assets/images/logo.svg"
+                  src={logo}
                   alt="Tech Book Club logo"
                   width="190"
                   height="35"
@@ -36,38 +45,23 @@ export default function Hero() {
                   >
                     <img
                       className="bouncy__image"
-                      src="./src/assets/images/icon-arrow-down.svg"
+                      src={arrowDown}
                       alt="arrow down for button"
                     />
                   </Button>
                   <div className="cta__testimonial">
                     <img
                       className="cta__image"
-                      src="./src/assets/images/image-avatars.webp"
+                      src={avatars}
                       alt="images of people who wrote testimonials"
                     />
                     <div className="cta__rating">
                       <div className="stars">
-                        <img
-                          src="./src/assets/images/icon-star.svg"
-                          alt="star"
-                        />
-                        <img
-                          src="./src/assets/images/icon-star.svg"
-                          alt="star"
-                        />
-                        <img
-                          src="./src/assets/images/icon-star.svg"
-                          alt="star"
-                        />
-                        <img
-                          src="./src/assets/images/icon-star.svg"
-                          alt="star"
-                        />
-                        <img
-                          src="./src/assets/images/icon-star.svg"
-                          alt="star"
-                        />
+                        <img src={stars} alt="star" />
+                        <img src={stars} alt="star" />
+                        <img src={stars} alt="star" />
+                        <img src={stars} alt="star" />
+                        <img src={stars} alt="star" />
                       </div>
                       <p className="cta__data">
                         200+ developers joined already
@@ -77,7 +71,7 @@ export default function Hero() {
                 </div>
               </div>
               <div className="hero__image">
-                <img src="./src/assets/images/image-hero.webp" alt="hero" />
+                <img src={heroImg} alt="hero" />
               </div>
             </div>
           </div>

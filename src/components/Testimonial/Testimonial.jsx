@@ -1,6 +1,10 @@
 import './Testimonials.scss'
 import useInView from '../../hooks/useInView'
 
+// Image import
+
+import stars from '../../assets/images/icon-star.svg'
+
 export default function Testimonials() {
   const [ref, isVisible] = useInView({ threshold: 0.3 })
 
@@ -17,10 +21,7 @@ export default function Testimonials() {
                 key={i}
                 className={`testimonial__star ${isVisible ? `animate-fade-up delay-${i + 1}` : ''}`}
               >
-                <img
-                  src="./src/assets/images/icon-star.svg"
-                  alt="star image rating"
-                />
+                <img src={stars} alt="star image rating" />
               </li>
             ))}
           </ul>
