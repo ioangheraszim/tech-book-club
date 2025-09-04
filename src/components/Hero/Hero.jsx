@@ -12,7 +12,10 @@ export default function Hero() {
                 <img
                   className="logo"
                   src="./src/assets/images/logo.svg"
-                  alt="tech book club logo"
+                  alt="Tech Book Club logo"
+                  width="190"
+                  height="35"
+                  loading="eager"
                 />
               </div>
             </nav>
