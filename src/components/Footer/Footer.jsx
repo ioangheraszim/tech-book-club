@@ -2,6 +2,8 @@ import './Footer.scss'
 import Button from '../button/Button'
 
 export default function Footer() {
+  const currentYear = new Date().getFullYear()
+
   return (
     <footer>
       <div className="container">
@@ -9,7 +11,6 @@ export default function Footer() {
           <h2 className="title title--white">
             Ready to debug your reading list?
           </h2>
-
           <div className="footer__cta">
             <Button
               className="btn btn--flex btn--footer"
@@ -40,6 +41,22 @@ export default function Footer() {
                 200+ developers joined already
               </p>
             </div>
+          </div>
+        </div>
+        <div className="footer__info">
+          <div className="info">
+            <p className="info__year">©{currentYear} - Tech Book Club</p>
+          </div>
+          <div className="socials">
+            <a href="#">
+              <img
+                src="./src/assets/images/logo-bluesky.svg"
+                alt="blue sky logo"
+              />
+            </a>
+            <a href="#">
+              <img src="./src/assets/images/logo-linkedin.svg" alt="linkedin" />
+            </a>
           </div>
         </div>
       </div>

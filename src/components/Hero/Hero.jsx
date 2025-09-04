@@ -1,9 +1,10 @@
 import './Hero.scss'
 import Button from '../button/Button'
+
 export default function Hero() {
   return (
     <>
-      <section className="hero">
+      <section className={`hero`}>
         <div className="container">
           <div className="">
             <nav>

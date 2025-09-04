@@ -20,3 +20,25 @@ footer {
 .cta__data--white {
   color: $color-white;
 }
+
+.footer__info {
+  margin: 2.5rem 0 0 0;
+  padding: 1.5rem 0;
+  color: $color-white;
+  border-top: 1px solid $color-light;
+  @include flex-center;
+  justify-content: space-between;
+}
+
+.info__year {
+  font-size: 1rem;
+  font-family: $martian-mono;
+}
+
+.socials {
+  @include flex-center;
+
+  img {
+    margin-left: 1.25rem;
+  }
+}
