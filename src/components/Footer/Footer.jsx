@@ -1,5 +1,5 @@
 import './Footer.scss'
-import Button from '/src/components/Button/Button.jsx'
+import Button from '../ButtonComp/ButtonComp'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()

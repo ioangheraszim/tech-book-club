@@ -1,5 +1,5 @@
 import './Membership.scss'
-import Button from '/src/components/Button/Button.jsx'
+import Button from '../ButtonComp/ButtonComp'
 
 export default function Membership() {
   return (
