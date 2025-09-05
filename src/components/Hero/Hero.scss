@@ -2,8 +2,6 @@
 @import '../../styles/mixins';
 
 .hero {
-  height: 100vh;
-
   background: url('../../assets/images/pattern-light-bg.svg') $color-soft;
   @media (min-width: 768px) {
     padding: 0 0 5rem 0;

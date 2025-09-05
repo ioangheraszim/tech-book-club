@@ -11,13 +11,12 @@ function App() {
   return (
     <>
       <Hero />
-      <Suspense fallback={<div className="loader">Loading...</div>}>
-        <Features />
-        <Journey />
-        <Membership />
-        <Testimonials />
-        <Footer />
-      </Suspense>
+      <Features />
+      <Journey />
+      <Membership />
+      <Testimonials />
+      <Footer />
+      <Suspense fallback={<div className="loader">Loading...</div>}></Suspense>
     </>
   )
 }
